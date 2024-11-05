@@ -301,3 +301,29 @@
 #     summa += 1 / k
 
 # print("Natija:", k)
+
+
+
+
+# Do'st sonlarni aniqlash uchun dastur
+a = int(input("Birinchi sonni kiriting: "))
+b = int(input("Ikkinchi sonni kiriting: "))
+
+yigindi_a = 0
+i = 1
+while i < a:
+    if a % i == 0:
+        yigindi_a += i
+    i += 1
+
+yigindi_b = 0
+j = 1
+while j < b:
+    if b % j == 0:
+        yigindi_b += j
+    j += 1
+
+if yigindi_a == b and yigindi_b == a:
+    print(f"{a} va {b} do'st sonlar.")
+else:
+    print(f"{a} va {b} do'st sonlar emas.")
